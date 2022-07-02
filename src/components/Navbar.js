@@ -3,30 +3,36 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div>
-            <nav className='bg-white nav shadow'>
-                <article className='container'>
-                    <div className='logo_section'>
-                        <div>
-                            <img src={"https://livedemo00.template-help.com/wt_prod-22311/images/logo-default-140x41.png"} alt="logo" />
-                        </div>
-                        <div>
-                            <i className='fa fa-clock-o' style={iconStyle} />
-                            <span>09:00AM — 05:00PM</span>
-                            <span><i className='fa fa-phone' style={iconStyle} /></span>
-                            <span>+1 323-913-4688</span>
-                            <button class="btn-donate">
-                                Get a Free Quote
-                            </button>
-                        </div>
-                    </div>
-                </article>
+            <nav className='main_nav'>
+                <ul>
+                    <li>
+                        <a href="https://...">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://...">About.</a>
+                    </li>
+                    <li>
+                        <a href="https://...">Our Tours</a>
+                    </li>
+                    <li>
+                        <a href="https://...">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="https://...">Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://...">Contacts</a>
+                    </li>
+                </ul>
+                <div className='icons'>
+                    <a href="https://..."> <i className='fa fa-facebook'></i></a>
+                    <a href="https://..."> <i className='fa fa-twitter'></i></a>
+                    <a href="https://..."><i className='fa fa-google-plus'></i></a>
+                    <a href="https://..."><i className='fa fa-instagram'></i></a>
+                </div>
             </nav>
         </div>
     )
 }
 
 export default Navbar
-const iconStyle = {
-    color: "rgb(28,121,225)",
-    fontSize: "25px"
-}

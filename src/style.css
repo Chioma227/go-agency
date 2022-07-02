@@ -1,49 +1,295 @@
 /* From uiverse.io by @Allyhere */
 .btn-donate {
-    --clr-font-main: hsla(0 0% 20% / 100);
-    --btn-bg-1: rgb(107, 162, 235);
-    --btn-bg-2: rgb(28,121,225);
-    --btn-bg-color: hsla(360 100% 100% / 1);
-    --radii: 0.5em;
-    cursor: pointer;
-    outline: none;
-    padding: 0.7em 1.2em;
-    min-width: 120px;
-    min-height: 44px;
-    font-size: var(--size, 1rem);
-    font-family: "Segoe UI", system-ui, sans-serif;
-    font-weight: 500;
-    transition: 0.8s;
-    background-size: 280% auto;
-    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
-    border: none;
-    border-radius: var(--radii);
-    color: var(--btn-bg-color);
-    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
-  }
-  
-  .btn-donate:hover {
-    background-position: right top;
-  }
-  
-  .btn-donate:is(:active) {
-    outline:none;
-    border: none;
-    transform: translateY(-7px);
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .btn-donate {
-      transition: linear;
-    }
-  }
-  .nav{
-    height: 80px;
-  }
-  .logo_section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 16px;
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(107, 162, 235);
+  --btn-bg-2: rgb(28, 121, 225);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  outline: none;
+  padding: 0.7em 1.2em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
 
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:active) {
+  outline: none;
+  border: none;
+  transform: translateY(-7px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
   }
+}
+
+.nav {
+  height: 80px;
+}
+
+.logo_area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 16px;
+
+}
+
+.contain {
+  padding: 0px 70px;
+}
+
+.span {
+  margin-left: 10px;
+}
+
+.vl {
+  height: 25px;
+  width: 0.1em;
+  background-color: rgba(167, 167, 167, 0.336);
+
+}
+
+span a {
+  color: black;
+}
+
+
+.contact {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 25px;
+  /* margin-right: auto; */
+}
+
+.main_nav {
+  background-color: rgb(0, 32, 61);
+  height: 65px;
+  padding: 0px 50px;
+  width: 100%;
+  line-height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_nav ul {
+  padding: 0;
+}
+
+.main_nav li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.main_nav li a {
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.3s;
+  padding: 18px;
+}
+
+.phone:hover {
+  text-decoration: none;
+}
+
+.main_nav li a:hover {
+  background-color: rgb(28, 56, 82);
+  height: 100%;
+  text-decoration: none;
+  border-top: 4px solid rgb(28, 121, 225);
+}
+
+.icons a {
+  margin-left: 25px;
+  color: white;
+}
+
+.icons a i {
+  font-size: 20px;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 75vh;
+}
+
+.carousel-caption {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+
+.h3-responsive {
+  font-size: 17px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h1-responsive {
+  font-size: 70px;
+  font-family: sans-serif;
+}
+
+.button-responsive {
+  background: transparent;
+  padding: 14px 35px;
+  border: 2px solid white;
+  color: white;
+  transition: 0.4s ease-in-out;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.button-responsive:hover {
+  background-color: rgb(28, 121, 225);
+  border: 2px solid rgb(28, 121, 225);
+}
+
+.cards {
+  margin-top: -30px;
+  z-index: -1;
+  width: fit-content;
+  margin: auto;
+  gap: 18px;
+  display: flex;
+
+}
+
+.card-bg {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  height: 75vh;
+}
+
+.card {
+  transition: 0.4s;
+}
+
+.card-img {
+  filter: brightness(70%);
+}
+
+.card-img:hover {
+  object-fit: cover;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: auto;
+  line-height: 380px;
+}
+
+.tours {
+  width: fit-content;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.tours a {
+  color: black;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: sans-serif;
+}
+
+.tours a:hover {
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.section2 {
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.discover ul li {
+  display: inline-block;
+  margin-left: 10px;
+
+}
+
+.item1,
+.item2,
+.item3 {
+  background-color: rgb(31, 31, 31);
+  height: 5px;
+  width: 5px;
+  border-radius: 8px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+#check {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-bar {
+  display: none;
+}
+
+#checkbtn {
+  display: none;
+}
+
+@media (max-width:999px) {
+  .main_nav {
+    background-color: none;
+  }
+
+  .main_nav ul {
+    position: fixed;
+    background-color: rgb(45, 45, 114);
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    left: -100%;
+    top: 80px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .main_nav li {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+#check:checked ~ .main_nav ul {
+  left: 0;
+}
